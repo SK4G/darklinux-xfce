@@ -166,4 +166,31 @@
 	<patterns>*</patterns>
 	<directories/>
 </action>
+<action>
+	<icon>preferences-desktop-wallpaper</icon>
+	<name>Feh set as wallpaper</name>
+	<unique-id>1628173940621872-1</unique-id>
+	<command>feh --bg-fill %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>trashindicator</icon>
+	<name>Feh remove wallpaper</name>
+	<unique-id>1628174585508282-2</unique-id>
+	<command>rm $HOME/.fehbg &amp; feh --bg-fill $HOME/.config/awesome/themes/copland/starwarsblue.jpg</command>
+	<description></description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>preferences-desktop-wallpaper</icon>
+	<name>Feh randomize wallpapers</name>
+	<unique-id>1628175132678014-3</unique-id>
+	<command>feh --bg-fill --randomize $HOME/Pictures/wallpapers/*</command>
+	<description>Save wallpapers in /Pictures/wallpapers/</description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
 </actions>
