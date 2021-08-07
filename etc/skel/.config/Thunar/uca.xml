@@ -97,15 +97,6 @@
 	<directories/>
 </action>
 <action>
-	<icon>imagemagick</icon>
-	<name>Convert png to jpg</name>
-	<unique-id>1510662686010963-1</unique-id>
-	<command>convert %f -quality 90 `basename %f .png`.jpg</command>
-	<description>Convert png to jpg</description>
-	<patterns>*.png</patterns>
-	<image-files/>
-</action>
-<action>
 	<icon>settings</icon>
 	<name>Ownership to root</name>
 	<unique-id>1526631155250282-8</unique-id>
@@ -191,6 +182,60 @@
 	<command>feh --bg-fill --randomize $HOME/Pictures/wallpapers/*</command>
 	<description>Save wallpapers in /Pictures/wallpapers/</description>
 	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>document-print</icon>
+	<name>PDF Print</name>
+	<unique-id>1628331876668147-1</unique-id>
+	<command>lpr %f</command>
+	<description></description>
+	<patterns>*.pdf</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>application-image-jpg</icon>
+	<name>PDF to jpg</name>
+	<unique-id>1628335723577672-4</unique-id>
+	<command>convert %f -quality 100 `basename %f .pdf`.jpg</command>
+	<description></description>
+	<patterns>*.pdf</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>image-crop</icon>
+	<name>PDF crop</name>
+	<unique-id>1628336152381306-5</unique-id>
+	<command>pdfcrop %f</command>
+	<description>requires texlive-core</description>
+	<patterns>*.pdf</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>imagemagick</icon>
+	<name>Convert png to jpg</name>
+	<unique-id>1510662686010963-1</unique-id>
+	<command>convert %f -quality 90 `basename %f .png`.jpg</command>
+	<description>Convert png to jpg</description>
+	<patterns>*.png</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>image-auto-adjust</icon>
+	<name>png to monochrome</name>
+	<unique-id>1628335313242782-2</unique-id>
+	<command>convert -monochrome %f -quality 100 `basename %f .png`-monochrome.png</command>
+	<description></description>
+	<patterns>*.png</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>image-auto-adjust</icon>
+	<name>jpg to monochrome</name>
+	<unique-id>1628335560842070-3</unique-id>
+	<command>convert -monochrome %f -quality 100 `basename %f .jpg`-monochrome.jpg</command>
+	<description></description>
+	<patterns>*.jpg</patterns>
 	<image-files/>
 </action>
 </actions>
