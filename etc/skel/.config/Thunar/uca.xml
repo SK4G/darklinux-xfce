@@ -11,6 +11,15 @@
 	<directories/>
 </action>
 <action>
+	<icon>drive-harddisk-ieee1394</icon>
+	<name>Check disk usage</name>
+	<unique-id>1629019187299543-1</unique-id>
+	<command>termite -e ncdu</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
 	<icon>checkbox</icon>
 	<name>Check sha1sum</name>
 	<unique-id>1526633271260079-26</unique-id>
