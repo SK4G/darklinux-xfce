@@ -269,7 +269,7 @@
 	<name>PDF crop</name>
 	<submenu></submenu>
 	<unique-id>1628336152381306-5</unique-id>
-	<command>pdfcrop --margins 5 %f</command>
+	<command>pdfcrop --margins 10 %f</command>
 	<description>requires texlive-core</description>
 	<range></range>
 	<patterns>*.pdf</patterns>
